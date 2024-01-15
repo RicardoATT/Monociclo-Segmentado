@@ -1,0 +1,30 @@
+module Latch_EX_MEM (
+	input							clk_i,
+	input							rst_ni,
+	input				[31:0]	pc_next_bj_i,
+	input							b_flag_i,
+	input				[63:0]	ex_res_i,
+	input				[63:0]	rr_data2_i,
+	output	reg	[31:0]	pc_next_bj_o,
+	output	reg				b_flag_o,
+	output	reg	[63:0]	ex_res_o,
+	output	reg	[63:0]	rr_data2_o
+);
+	always @(posedge clk_i, negedge rst_ni)
+		begin
+		if(!rst_ni)
+			begin
+				pc_next_bj_o <= 32'h0;
+				b_flag_o <= 1'h0;
+				ex_res_o <= 64'h0;
+				rr_data2_o <= 64'h0;
+			end
+		else
+			begin
+				pc_next_bj_o <= pc_next_bj_i;
+				b_flag_o <= b_flag_i;
+				ex_res_o <= ex_res_i;
+				rr_data2_o <= rr_data2_i;
+			end
+		end
+endmodule 
