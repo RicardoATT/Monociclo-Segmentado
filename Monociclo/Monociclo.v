@@ -32,6 +32,7 @@ El monociclo se puede dividir generalmente en 5 etapas:
 	wire			[63:0]	pc_next_ext;
 	wire			[31:0]	if_instr_o;
 	wire						pc_branch;
+	wire						pc_branch2;
 	wire						pc_control;
 	wire			[31:0]	pc_id;
 	wire			[31:0]	pc_rr;
@@ -39,6 +40,11 @@ El monociclo se puede dividir generalmente en 5 etapas:
 	wire 			[31:0]	if_instr_if;
 	wire 			[31:0]	if_instr_id;
 	wire			[31:0]	pc_next_bj_latch;
+	wire			[31:0]	pc_next4_id;
+	wire			[31:0]	pc_next4_rr;
+	wire			[31:0]	pc_next4_ex;
+	wire			[31:0]	pc_next4_mem;
+	wire			[31:0]	pc_next4_wb;
 
 // INSTRUCTION DECODE
 	wire 						id_regwrite_o;
@@ -76,6 +82,8 @@ El monociclo se puede dividir generalmente en 5 etapas:
 	wire 						id_regwrite_mem;
 	wire 						id_memtoreg_mem;
 	wire						id_branch_mem;
+	wire						id_jump_mem;
+	wire						id_jump_wb;
 
 // REGISTER READ
 	wire			[63:0]	rr_data1_o;
@@ -120,6 +128,8 @@ El monociclo se puede dividir generalmente en 5 etapas:
 
 // BRANCH_PREDICTOR
 	wire						latch_flush;
+	wire						if_id_flush;
+	wire						ifidflush;
 
 /////////////////////////	ETAPA FETCH - BÚSQUEDA DE INSTRUCCIONES /////////////////////////
 	
@@ -161,23 +171,31 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.pc_alu_i			(pc_ex),
 		.branch_i			(id_branch_o),
 		.branch2_i			(id_branch_mem),
+		.jump_i				(id_jump_o),
 		.pc_target_i		(pc_next_bj_latch),
 		.branch_pre_i		(pc_branch),
+		.branch_pre2_i		(pc_branch2),
 		.pc_control_o		(pc_control),
 		.flush_control_o	(latch_flush),
+		.if_id_flush_o		(if_id_flush),
 		.pc_address_o		(pc_next_bj)
 	);
 
 //////////********** 	  Latch IF -> ID 		**********//////////
+	
+	assign ifidflush = latch_flush || if_id_flush;
+	
 	Latch_IF_ID Latch1(
 		.clk_i			(clk_i),
 		.rst_ni			(rst_ni),
 		.if_id_lock		(h_lock),
-		.if_id_flush	(latch_flush),
+		.if_id_flush	(ifidflush),
 		.if_instr_i		(if_instr_if),
 		.pc_i				(pc),
+		.pc_next4_i		(pc_next4),
 		.if_instr_o		(if_instr_id),
-		.pc_o				(pc_id)
+		.pc_o				(pc_id),
+		.pc_next4_o		(pc_next4_id)
 	);
 	
 ///////////////////////// ETAPA DECODE - DECODIFICACIÓN /////////////////////////
@@ -209,6 +227,7 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.id_rr_flush	(latch_flush),
 		.if_instr_i		(if_instr_id),
 		.pc_i				(pc_id),
+		.pc_next4_i		(pc_next4_id),
 		.regwrite_i		(id_regwrite_id),
 		.memread_i		(id_memread_id), 
 		.memwrite_i		(id_memwrite_id),
@@ -220,6 +239,7 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.ctrl_r_i		(id_ctrl_r_id),
 		.if_instr_o		(if_instr_o),
 		.pc_o				(pc_rr),
+		.pc_next4_o		(pc_next4_rr),
 		.regwrite_o		(id_regwrite_rr),
 		.memread_o		(id_memread_rr), 
 		.memwrite_o		(id_memwrite_rr),
@@ -234,10 +254,10 @@ El monociclo se puede dividir generalmente en 5 etapas:
 ///////////////////////// REGISTER READ - BÚSQUEDA DE OPERANDOS /////////////////////////
 	
 	SignExtendPC SignExtPC (
-		.pc_return		(pc_next4),			//PC retorno
+		.pc_return		(pc_next4_wb),			//PC retorno
 		.se_pc_return	(pc_next_ext)		//PC retorno extendido
 	);
-	assign	mux_wb_o = (id_jump_o) ? pc_next_ext : wb_data_o;
+	assign	mux_wb_o = (id_jump_wb) ? pc_next_ext : wb_data_o;
 	
 	RegisterFile #(
 		.width 		(64),		//ancho
@@ -270,6 +290,7 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.rr_ex_lock		(h_lock),
 		.rr_ex_flush	(latch_flush),
 		.pc_i				(pc_rr),
+		.pc_next4_i		(pc_next4_rr),
 		.rr_data1_i		(rr_data1_latch),
 		.rr_data2_i		(rr_data2_latch),
 		.se_immed_i		(se_immed_latch),
@@ -286,6 +307,7 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.alu_control_i (alu_control_rr),
 		.ctrl_r_i		(id_ctrl_r_rr),
 		.pc_o				(pc_ex),
+		.pc_next4_o		(pc_next4_ex),
 		.rr_data1_o		(rr_data1_o),
 		.rr_data2_o		(rr_data2_o),
 		.se_immed_o		(se_immed_o),
@@ -329,6 +351,7 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.rd_wb			(addr_rd_wb),
 		.ctrl_r_ex		(id_ctrl_r_ex),
 		.ctrl_r_rr		(id_ctrl_r_rr),
+		.memwrite_i		(id_memwrite_o),
 		.branch_i		(id_branch_o),
 		.mux_src1		(mux_src1),
 		.mux_src2		(mux_src2),
@@ -384,6 +407,7 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.clk_i			(clk_i),
 		.rst_ni			(rst_ni),
 		.ex_mem_flush	(latch_flush),
+		.pc_next4_i		(pc_next4_ex),
 		.ex_res_i		(ex_res_latch),
 		.rr_data2_i		(rr_data2_o),
 		.rd_i				(addr_rd_ex),
@@ -392,6 +416,9 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.memwrite_i		(id_memwrite_ex),
 		.memtoreg_i		(id_memtoreg_ex),
 		.branch_i		(id_branch_o),
+		.branch_pre_i	(pc_branch),
+		.jump_i			(id_jump_o),
+		.pc_next4_o		(pc_next4_mem),
 		.ex_res_o		(ex_res_o),
 		.rr_data2_o		(data_wr_o),
 		.rd_o				(addr_rd_mem),
@@ -399,7 +426,9 @@ El monociclo se puede dividir generalmente en 5 etapas:
 		.memread_o		(id_memread_o),
 		.memwrite_o		(id_memwrite_o),
 		.memtoreg_o		(id_memtoreg_mem),
-		.branch_o		(id_branch_mem)
+		.branch_o		(id_branch_mem),
+		.branch_pre_o	(pc_branch2),
+		.jump_o			(id_jump_mem)
 	);	
 	
 ///////////////////////// DATA CACHE - ACCESO A MEMORIA /////////////////////////
@@ -418,16 +447,20 @@ El monociclo se puede dividir generalmente en 5 etapas:
 	Latch_MEM_WB Latch5(
 		.clk_i			(clk_i),
 		.rst_ni			(rst_ni),
+		.pc_next4_i		(pc_next4_mem),
 		.mem_data_i		(mem_data_latch),
 		.ex_res_i		(ex_res_o),
 		.rd_i				(addr_rd_mem),
 		.regwrite_i		(id_regwrite_mem),
 		.memtoreg_i		(id_memtoreg_mem),
+		.jump_i			(id_jump_mem),
+		.pc_next4_o		(pc_next4_wb),
 		.mem_data_o		(mem_data_o),
 		.ex_res_o		(ex_data_o),
 		.rd_o				(addr_rd_wb),
 		.regwrite_o		(id_regwrite_o),
-		.memtoreg_o		(id_memtoreg_o)
+		.memtoreg_o		(id_memtoreg_o),
+		.jump_o			(id_jump_wb)
 	);
 
 /////////////////////////	ETAPA WRITE BACK - ESCRITURA DE RETORN DEL RESULTADO /////////////////////////

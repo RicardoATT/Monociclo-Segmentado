@@ -5,6 +5,7 @@ module Latch_ID_RR (
 	input							id_rr_flush,
 	input				[31:0]	if_instr_i,
 	input				[31:0]	pc_i,
+	input				[31:0]	pc_next4_i,
 	input							regwrite_i,
 	input							memread_i, 
 	input							memwrite_i,
@@ -16,6 +17,7 @@ module Latch_ID_RR (
 	input							ctrl_r_i,
 	output	reg	[31:0]	if_instr_o,
 	output	reg	[31:0]	pc_o,
+	output	reg	[31:0]	pc_next4_o,
 	output 	reg				regwrite_o,
 	output 	reg				memread_o, 
 	output 	reg				memwrite_o,
@@ -32,6 +34,7 @@ module Latch_ID_RR (
 			begin
 				if_instr_o		<= 32'h0;
 				pc_o 				<= 32'h0;
+				pc_next4_o		<= 32'h0;
 				regwrite_o 		<= 1'h0;
 				memread_o  		<= 1'h0;
 				memwrite_o 		<= 1'h0;
@@ -46,6 +49,7 @@ module Latch_ID_RR (
 			begin
 				if_instr_o		<= 32'h0;
 				pc_o 				<= 32'h0;
+				pc_next4_o		<= 32'h0;
 				regwrite_o 		<= 1'h0;
 				memread_o  		<= 1'h0;
 				memwrite_o 		<= 1'h0;
@@ -60,6 +64,7 @@ module Latch_ID_RR (
 			begin
 				if_instr_o		<= if_instr_i;
 				pc_o 				<= pc_i;
+				pc_next4_o		<= pc_next4_i;
 				regwrite_o 		<= regwrite_i;
 				memread_o  		<= memread_i;
 				memwrite_o 		<= memwrite_i;

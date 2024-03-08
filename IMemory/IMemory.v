@@ -13,7 +13,7 @@ module IMemory #(
 	//Inicializacion de memoria de instrucciones
 	initial
 		begin
-			$readmemh("Pruebabp4.hex", mem);
+			$readmemh("Instr_Memo.hex", mem);
 		end
 	//Lectura de instruccion
 	always @(*)

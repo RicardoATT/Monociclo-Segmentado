@@ -17,9 +17,6 @@ module RegisterFile #(
 	initial
 	begin
 		mem[5'h0] = 64'h0;
-		mem[5'h1] = 64'h1;
-		mem[5'h2] = 64'h2;
-		mem[5'h3] = 64'h3;
 	end
 	//Escritura
 	always @(posedge clk_i)

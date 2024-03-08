@@ -8,10 +8,13 @@ module BranchPredictor#(
 	input				[31:0]	pc_alu_i,
 	input							branch_i,
 	input							branch2_i,
+	input							jump_i,
 	input				[31:0]	pc_target_i,
 	input							branch_pre_i,
+	input							branch_pre2_i,
 	output	reg				pc_control_o,
 	output	reg				flush_control_o,
+	output	reg				if_id_flush_o,
 	output	reg	[31:0]	pc_address_o
 );
 
@@ -24,7 +27,7 @@ module BranchPredictor#(
 		if (branch_i)
 			begin
 			target_buffer[(pc_alu_i[6:2])] <= pc_target_i;
-			if (!branch2_i)
+			if (!branch2_i || !branch_pre2_i)
 				begin
 				case (pht[(pc_alu_i[6:2])])
 					//Strongly Not Taken
@@ -32,6 +35,7 @@ module BranchPredictor#(
 						begin
 						if (branch_pre_i)
 							begin
+							if_id_flush_o			= 1'h0;
 							flush_control_o		= 1'h1;
 							pc_control_o 			= 1'h1;
 							pc_address_o 			= pc_target_i;
@@ -39,6 +43,7 @@ module BranchPredictor#(
 							end
 						else
 							begin
+							if_id_flush_o			= 1'h0;
 							flush_control_o 		= 1'h0;
 							pc_control_o 		   = 1'h0;
 							end
@@ -48,6 +53,7 @@ module BranchPredictor#(
 						begin
 						if (branch_pre_i)
 							begin
+							if_id_flush_o			= 1'h0;
 							flush_control_o 		= 1'h1;
 							pc_control_o 			= 1'h1;
 							pc_address_o 			= pc_target_i;
@@ -55,6 +61,7 @@ module BranchPredictor#(
 							end
 						else
 							begin
+							if_id_flush_o			= 1'h0;
 							flush_control_o 		= 1'h0;
 							pc_control_o 			= 1'h0;
 							pht[(pc_alu_i[6:2])] <= 2'b00;
@@ -65,6 +72,7 @@ module BranchPredictor#(
 						begin
 						if (branch_pre_i)
 							begin
+							if_id_flush_o			= 1'h1;
 							flush_control_o 		= 1'h0;
 							pc_control_o 			= 1'h1;
 							pc_address_o 			= target_buffer[(pc_alu_i[6:2])];
@@ -72,6 +80,7 @@ module BranchPredictor#(
 							end
 						else
 							begin
+							if_id_flush_o			= 1'h0;
 							flush_control_o 		= 1'h1;
 							pc_control_o 			= 1'h1;
 							pc_address_o 			= pc_alu_i + 32'h4;
@@ -83,12 +92,14 @@ module BranchPredictor#(
 						begin
 						if (branch_pre_i)
 							begin
+							if_id_flush_o			= 1'h1;
 							flush_control_o 		= 1'h0;
 							pc_control_o 			= 1'h1;
 							pc_address_o 			= target_buffer[(pc_alu_i[6:2])];
 							end
 						else
 							begin
+							if_id_flush_o			= 1'h0;
 							flush_control_o 		= 1'h1;
 							pc_control_o 			= 1'h1;
 							pc_address_o 			= pc_alu_i + 32'h4;
@@ -97,11 +108,21 @@ module BranchPredictor#(
 						end
 					default
 						begin
-						flush_control_o = 1'h0;
-						pc_control_o	 = 1'h0;
-						pc_address_o	 = 32'h0;
+						if_id_flush_o	 	= 1'h0;
+						flush_control_o 	= 1'h0;
+						pc_control_o	 	= 1'h0;
+						pc_address_o	 	= 32'h0;
 						end
 				endcase
+				end
+			end
+		else if (jump_i)
+			begin
+			if (!branch2_i)
+				begin
+				flush_control_o		= 1'h1;
+				pc_control_o 			= 1'h1;
+				pc_address_o 			= pc_target_i;
 				end
 			end
 		else if (opcode_i == 5'b11000)
@@ -109,11 +130,16 @@ module BranchPredictor#(
 			if (instr_pc[(pc_i[6:2])] == 25'h0)
 				begin
 				if (pht[(pc_i[6:2])] == 2'b00 || pht[(pc_i[6:2])] == 2'b01)
-					pc_control_o = 1'h0;
+					begin
+					if_id_flush_o		= 1'h0;
+					flush_control_o 	= 1'h0;
+					pc_control_o 		= 1'h0;
+					end
 				else
 					begin
-					pc_address_o = target_buffer[(pc_i[6:2])];
-					pc_control_o = 1'h1;
+					if_id_flush_o		= 1'h1;
+					pc_address_o 		= target_buffer[(pc_i[6:2])];
+					pc_control_o 		= 1'h1;
 					end
 				end
 			else
@@ -124,9 +150,10 @@ module BranchPredictor#(
 			end
 		else
 			begin
-			flush_control_o = 1'h0;
-			pc_control_o	 = 1'h0;
-			pc_address_o	 = 32'h0;
+			if_id_flush_o		= 1'h0;
+			flush_control_o 	= 1'h0;
+			pc_control_o	 	= 1'h0;
+			pc_address_o	 	= 32'h0;
 			end
 		end
 	

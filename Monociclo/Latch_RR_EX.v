@@ -4,6 +4,7 @@ module Latch_RR_EX (
 	input							rr_ex_lock,
 	input							rr_ex_flush,
 	input				[31:0]	pc_i,
+	input				[31:0]	pc_next4_i,
 	input				[63:0]	rr_data1_i,
 	input				[63:0]	rr_data2_i,
 	input				[63:0]	se_immed_i,
@@ -20,6 +21,7 @@ module Latch_RR_EX (
 	input				[3:0]		alu_control_i,
 	input							ctrl_r_i,
 	output	reg	[31:0]	pc_o,
+	output	reg	[31:0]	pc_next4_o,
 	output	reg	[63:0]	rr_data1_o,
 	output	reg	[63:0]	rr_data2_o,
 	output	reg	[63:0]	se_immed_o,
@@ -41,6 +43,7 @@ module Latch_RR_EX (
 		if (!rst_ni)
 			begin
 				pc_o 				<= 32'h0;
+				pc_next4_o		<= 32'h0;
 				rr_data1_o 		<= 64'h0;
 				rr_data2_o 		<= 64'h0;
 				se_immed_o 		<= 64'h0;
@@ -60,6 +63,7 @@ module Latch_RR_EX (
 		else if (rr_ex_flush)
 			begin
 				pc_o 				<= 32'h0;
+				pc_next4_o		<= 32'h0;
 				rr_data1_o 		<= 64'h0;
 				rr_data2_o 		<= 64'h0;
 				se_immed_o 		<= 64'h0;
@@ -79,6 +83,7 @@ module Latch_RR_EX (
 		else if (!rr_ex_lock)
 			begin
 				pc_o 				<= pc_i;
+				pc_next4_o		<= pc_next4_i;
 				rr_data1_o 		<= rr_data1_i;
 				rr_data2_o 		<= rr_data2_i;
 				se_immed_o 		<= se_immed_i;
