@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Monociclo
-Fri Mar 08 03:00:27 2024
+Sun Mar 10 13:49:12 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 08 03:00:27 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun Mar 10 13:49:12 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Monociclo                                   ;
 ; Top-level Entity Name              ; Monociclo                                   ;
@@ -182,57 +182,57 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
+;     Processor 2            ;   0.2%      ;
 ;     Processor 3            ;   0.2%      ;
 ;     Processor 4            ;   0.2%      ;
-;     Processor 5            ;   0.2%      ;
-;     Processor 6            ;   0.2%      ;
-;     Processor 7            ;   0.2%      ;
-;     Processor 8            ;   0.2%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
 ;     Processors 9-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                            ;
-+-----------------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                                                    ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                            ; Library ;
-+-----------------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../BranchPredictor/BranchPredictor.v                                                                ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/BranchPredictor/BranchPredictor.v                        ;         ;
-; ../mux_3_to_1/mux_3_to_1.v                                                                          ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/mux_3_to_1/mux_3_to_1.v                                  ;         ;
-; ../Forwarding/Forwarding.v                                                                          ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Forwarding/Forwarding.v                                  ;         ;
-; ../Hazard/Hazard.v                                                                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Hazard/Hazard.v                                          ;         ;
-; ../IMemory/IMemory.v                                                                                ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/IMemory/IMemory.v                                        ;         ;
-; ../SignExtendPC/SignExtendPC.v                                                                      ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/SignExtendPC/SignExtendPC.v                              ;         ;
-; ../BJcontrol/BJcontrol.v                                                                            ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/BJcontrol/BJcontrol.v                                    ;         ;
-; ../DecodeALU/DecodeALU.v                                                                            ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/DecodeALU/DecodeALU.v                                    ;         ;
-; ../Memory/Memory.v                                                                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Memory/Memory.v                                          ;         ;
-; ../FullAdderN/FullAdderN.v                                                                          ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/FullAdderN/FullAdderN.v                                  ;         ;
-; ../FullAdder/FullAdder.v                                                                            ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/FullAdder/FullAdder.v                                    ;         ;
-; ../SignExtend/SignExtend.v                                                                          ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/SignExtend/SignExtend.v                                  ;         ;
-; ../RegisterFile/RegisterFile.v                                                                      ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/RegisterFile/RegisterFile.v                              ;         ;
-; ../ALU/ALU.v                                                                                        ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/ALU/ALU.v                                                ;         ;
-; ../Decode/Decode.v                                                                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Decode/Decode.v                                          ;         ;
-; Monociclo.v                                                                                         ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v                                    ;         ;
-; Latch_IF_ID.v                                                                                       ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_IF_ID.v                                  ;         ;
-; Latch_EX_MEM.v                                                                                      ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_EX_MEM.v                                 ;         ;
-; Latch_MEM_WB.v                                                                                      ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_MEM_WB.v                                 ;         ;
-; Latch_RR_EX.v                                                                                       ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_RR_EX.v                                  ;         ;
-; Latch_ID_RR.v                                                                                       ; yes             ; User Verilog HDL File                                 ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_ID_RR.v                                  ;         ;
-; /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/memory/data_mem.hex    ; yes             ; Auto-Found Hexadecimal (Intel-Format) File            ; /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/memory/data_mem.hex                                        ;         ;
-; /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/imemory/instr_memo.hex ; yes             ; Auto-Found Hexadecimal (Intel-Format) File            ; /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/imemory/instr_memo.hex                                     ;         ;
-; altsyncram.tdf                                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                   ;         ;
-; stratix_ram_block.inc                                                                               ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                            ;         ;
-; lpm_mux.inc                                                                                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                      ;         ;
-; lpm_decode.inc                                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                   ;         ;
-; aglobal201.inc                                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                                   ;         ;
-; a_rdenreg.inc                                                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                    ;         ;
-; altrom.inc                                                                                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                       ;         ;
-; altram.inc                                                                                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                       ;         ;
-; altdpram.inc                                                                                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                     ;         ;
-; db/altsyncram_mmh1.tdf                                                                              ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/db/altsyncram_mmh1.tdf                         ;         ;
-; db/monociclo.ram0_registerfile_a34c3c8.hdl.mif                                                      ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/db/monociclo.ram0_registerfile_a34c3c8.hdl.mif ;         ;
-+-----------------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                          ;
++--------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                                           ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                   ; Library ;
++--------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../BranchPredictor/BranchPredictor.v                                                       ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor/BranchPredictor.v                        ;         ;
+; ../mux_3_to_1/mux_3_to_1.v                                                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/mux_3_to_1/mux_3_to_1.v                                  ;         ;
+; ../Forwarding/Forwarding.v                                                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Forwarding/Forwarding.v                                  ;         ;
+; ../Hazard/Hazard.v                                                                         ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Hazard/Hazard.v                                          ;         ;
+; ../IMemory/IMemory.v                                                                       ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v                                        ;         ;
+; ../SignExtendPC/SignExtendPC.v                                                             ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtendPC/SignExtendPC.v                              ;         ;
+; ../BJcontrol/BJcontrol.v                                                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BJcontrol/BJcontrol.v                                    ;         ;
+; ../DecodeALU/DecodeALU.v                                                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/DecodeALU/DecodeALU.v                                    ;         ;
+; ../Memory/Memory.v                                                                         ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Memory/Memory.v                                          ;         ;
+; ../FullAdderN/FullAdderN.v                                                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdderN/FullAdderN.v                                  ;         ;
+; ../FullAdder/FullAdder.v                                                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdder/FullAdder.v                                    ;         ;
+; ../SignExtend/SignExtend.v                                                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtend/SignExtend.v                                  ;         ;
+; ../RegisterFile/RegisterFile.v                                                             ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/RegisterFile/RegisterFile.v                              ;         ;
+; ../ALU/ALU.v                                                                               ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/ALU/ALU.v                                                ;         ;
+; ../Decode/Decode.v                                                                         ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Decode/Decode.v                                          ;         ;
+; Monociclo.v                                                                                ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v                                    ;         ;
+; Latch_IF_ID.v                                                                              ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_IF_ID.v                                  ;         ;
+; Latch_EX_MEM.v                                                                             ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_EX_MEM.v                                 ;         ;
+; Latch_MEM_WB.v                                                                             ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_MEM_WB.v                                 ;         ;
+; Latch_RR_EX.v                                                                              ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_RR_EX.v                                  ;         ;
+; Latch_ID_RR.v                                                                              ; yes             ; User Verilog HDL File                                 ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_ID_RR.v                                  ;         ;
+; /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/memory/data_mem.hex    ; yes             ; Auto-Found Hexadecimal (Intel-Format) File            ; /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/memory/data_mem.hex                                        ;         ;
+; /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/imemory/instr_memo.hex ; yes             ; Auto-Found Hexadecimal (Intel-Format) File            ; /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/imemory/instr_memo.hex                                     ;         ;
+; altsyncram.tdf                                                                             ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                          ;         ;
+; stratix_ram_block.inc                                                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                   ;         ;
+; lpm_mux.inc                                                                                ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                             ;         ;
+; lpm_decode.inc                                                                             ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                          ;         ;
+; aglobal201.inc                                                                             ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                          ;         ;
+; a_rdenreg.inc                                                                              ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                           ;         ;
+; altrom.inc                                                                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                              ;         ;
+; altram.inc                                                                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                              ;         ;
+; altdpram.inc                                                                               ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                            ;         ;
+; db/altsyncram_mmh1.tdf                                                                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/db/altsyncram_mmh1.tdf                         ;         ;
+; db/monociclo.ram0_registerfile_a34c3c8.hdl.mif                                             ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/db/monociclo.ram0_registerfile_a34c3c8.hdl.mif ;         ;
++--------------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -1071,93 +1071,93 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Mar 08 03:00:10 2024
+    Info: Processing started: Sun Mar 10 13:48:55 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Monociclo -c Monociclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/branchpredictor/branchpredictor.v
-    Info (12023): Found entity 1: BranchPredictor File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/BranchPredictor/BranchPredictor.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/mux_3_to_1/mux_3_to_1.v
-    Info (12023): Found entity 1: mux_3_to_1 File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/mux_3_to_1/mux_3_to_1.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/forwarding/forwarding.v
-    Info (12023): Found entity 1: Forwarding File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Forwarding/Forwarding.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/hazard/hazard.v
-    Info (12023): Found entity 1: Hazard File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Hazard/Hazard.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/imemory/imemory.v
-    Info (12023): Found entity 1: IMemory File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/IMemory/IMemory.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/signextendpc/signextendpc.v
-    Info (12023): Found entity 1: SignExtendPC File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/SignExtendPC/SignExtendPC.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/bjcontrol/bjcontrol.v
-    Info (12023): Found entity 1: BJcontrol File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/BJcontrol/BJcontrol.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/decodealu/decodealu.v
-    Info (12023): Found entity 1: DecodeALU File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/DecodeALU/DecodeALU.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/memory/memory.v
-    Info (12023): Found entity 1: Memory File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Memory/Memory.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/fulladdern/fulladdern.v
-    Info (12023): Found entity 1: FullAdderN File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/FullAdderN/FullAdderN.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/fulladder/fulladder.v
-    Info (12023): Found entity 1: FullAdder File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/FullAdder/FullAdder.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/signextend/signextend.v
-    Info (12023): Found entity 1: SignExtend File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/SignExtend/SignExtend.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/registerfile/registerfile.v
-    Info (12023): Found entity 1: RegisterFile File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/RegisterFile/RegisterFile.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/alu/alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/ALU/ALU.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/usuario/documents/proyectos_ratt/microprocesador_monociclo_segmentado/decode/decode.v
-    Info (12023): Found entity 1: Decode File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Decode/Decode.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/branchpredictor/branchpredictor.v
+    Info (12023): Found entity 1: BranchPredictor File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor/BranchPredictor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/mux_3_to_1/mux_3_to_1.v
+    Info (12023): Found entity 1: mux_3_to_1 File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/mux_3_to_1/mux_3_to_1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/forwarding/forwarding.v
+    Info (12023): Found entity 1: Forwarding File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Forwarding/Forwarding.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/hazard/hazard.v
+    Info (12023): Found entity 1: Hazard File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Hazard/Hazard.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/imemory/imemory.v
+    Info (12023): Found entity 1: IMemory File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/signextendpc/signextendpc.v
+    Info (12023): Found entity 1: SignExtendPC File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtendPC/SignExtendPC.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/bjcontrol/bjcontrol.v
+    Info (12023): Found entity 1: BJcontrol File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BJcontrol/BJcontrol.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/decodealu/decodealu.v
+    Info (12023): Found entity 1: DecodeALU File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/DecodeALU/DecodeALU.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/memory/memory.v
+    Info (12023): Found entity 1: Memory File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Memory/Memory.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/fulladdern/fulladdern.v
+    Info (12023): Found entity 1: FullAdderN File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdderN/FullAdderN.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/fulladder/fulladder.v
+    Info (12023): Found entity 1: FullAdder File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdder/FullAdder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/signextend/signextend.v
+    Info (12023): Found entity 1: SignExtend File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtend/SignExtend.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/registerfile/registerfile.v
+    Info (12023): Found entity 1: RegisterFile File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/RegisterFile/RegisterFile.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/alu/alu.v
+    Info (12023): Found entity 1: ALU File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/ALU/ALU.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/ricardo aldair tt/documents/ratt_repos/procesador_segmentado/decode/decode.v
+    Info (12023): Found entity 1: Decode File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Decode/Decode.v Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file monociclo.v
-    Info (12023): Found entity 1: Monociclo File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 11
-    Info (12023): Found entity 2: Monociclo_vlg_tst File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 474
+    Info (12023): Found entity 1: Monociclo File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 11
+    Info (12023): Found entity 2: Monociclo_vlg_tst File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 474
 Info (12021): Found 1 design units, including 1 entities, in source file latch_if_id.v
-    Info (12023): Found entity 1: Latch_IF_ID File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_IF_ID.v Line: 1
+    Info (12023): Found entity 1: Latch_IF_ID File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_IF_ID.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file latch_ex_mem.v
-    Info (12023): Found entity 1: Latch_EX_MEM File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_EX_MEM.v Line: 1
+    Info (12023): Found entity 1: Latch_EX_MEM File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_EX_MEM.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file latch_mem_wb.v
-    Info (12023): Found entity 1: Latch_MEM_WB File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_MEM_WB.v Line: 1
+    Info (12023): Found entity 1: Latch_MEM_WB File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_MEM_WB.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file latch_rr_ex.v
-    Info (12023): Found entity 1: Latch_RR_EX File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_RR_EX.v Line: 1
+    Info (12023): Found entity 1: Latch_RR_EX File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_RR_EX.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file latch_id_rr.v
-    Info (12023): Found entity 1: Latch_ID_RR File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Latch_ID_RR.v Line: 1
+    Info (12023): Found entity 1: Latch_ID_RR File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_ID_RR.v Line: 1
 Info (12127): Elaborating entity "Monociclo" for the top level hierarchy
-Info (12128): Elaborating entity "FullAdderN" for hierarchy "FullAdderN:Add4" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 157
-Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdderN:Add4|FullAdder:genfor[0].Adder" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/FullAdderN/FullAdderN.v Line: 19
-Info (12128): Elaborating entity "IMemory" for hierarchy "IMemory:Instr_Mem" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 165
-Warning (10850): Verilog HDL warning at IMemory.v(16): number of words (19) in memory file does not match the number of elements in the address range [0:31] File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/IMemory/IMemory.v Line: 16
-Warning (10030): Net "mem.data_a" at IMemory.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/IMemory/IMemory.v Line: 12
-Warning (10030): Net "mem.waddr_a" at IMemory.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/IMemory/IMemory.v Line: 12
-Warning (10030): Net "mem.we_a" at IMemory.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/IMemory/IMemory.v Line: 12
-Info (12128): Elaborating entity "BranchPredictor" for hierarchy "BranchPredictor:B_Predictor" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 182
-Info (12128): Elaborating entity "Latch_IF_ID" for hierarchy "Latch_IF_ID:Latch1" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 199
-Info (12128): Elaborating entity "Decode" for hierarchy "Decode:Deco" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 214
-Info (12128): Elaborating entity "DecodeALU" for hierarchy "DecodeALU:DecoALU" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 220
-Info (12128): Elaborating entity "Latch_ID_RR" for hierarchy "Latch_ID_RR:Latch2" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 252
-Info (12128): Elaborating entity "SignExtendPC" for hierarchy "SignExtendPC:SignExtPC" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 259
-Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RegFile" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 275
-Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:SignExt" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 284
-Info (12128): Elaborating entity "Latch_RR_EX" for hierarchy "Latch_RR_EX:Latch3" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 326
-Info (12128): Elaborating entity "Hazard" for hierarchy "Hazard:hazard" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 342
-Info (12128): Elaborating entity "Forwarding" for hierarchy "Forwarding:forward" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 360
-Warning (10240): Verilog HDL Always Construct warning at Forwarding.v(20): inferring latch(es) for variable "mux_rr_src2", which holds its previous value in one or more paths through the always construct File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Forwarding/Forwarding.v Line: 20
-Info (10041): Inferred latch for "mux_rr_src2" at Forwarding.v(55) File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Forwarding/Forwarding.v Line: 55
-Info (12128): Elaborating entity "mux_3_to_1" for hierarchy "mux_3_to_1:mux_rs1" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 368
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:Exe" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 384
-Info (12128): Elaborating entity "FullAdderN" for hierarchy "ALU:Exe|FullAdderN:sumres" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/ALU/ALU.v Line: 170
-Info (12128): Elaborating entity "BJcontrol" for hierarchy "BJcontrol:BJctrl" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 403
-Info (12128): Elaborating entity "Latch_EX_MEM" for hierarchy "Latch_EX_MEM:Latch4" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 432
-Info (12128): Elaborating entity "Memory" for hierarchy "Memory:DataMem" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 444
-Info (12128): Elaborating entity "Latch_MEM_WB" for hierarchy "Latch_MEM_WB:Latch5" File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/Monociclo.v Line: 464
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/db/Monociclo.ram0_RegisterFile_a34c3c8.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (12128): Elaborating entity "FullAdderN" for hierarchy "FullAdderN:Add4" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 157
+Info (12128): Elaborating entity "FullAdder" for hierarchy "FullAdderN:Add4|FullAdder:genfor[0].Adder" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdderN/FullAdderN.v Line: 19
+Info (12128): Elaborating entity "IMemory" for hierarchy "IMemory:Instr_Mem" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 165
+Warning (10850): Verilog HDL warning at IMemory.v(16): number of words (19) in memory file does not match the number of elements in the address range [0:31] File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v Line: 16
+Warning (10030): Net "mem.data_a" at IMemory.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v Line: 12
+Warning (10030): Net "mem.waddr_a" at IMemory.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v Line: 12
+Warning (10030): Net "mem.we_a" at IMemory.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v Line: 12
+Info (12128): Elaborating entity "BranchPredictor" for hierarchy "BranchPredictor:B_Predictor" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 182
+Info (12128): Elaborating entity "Latch_IF_ID" for hierarchy "Latch_IF_ID:Latch1" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 199
+Info (12128): Elaborating entity "Decode" for hierarchy "Decode:Deco" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 214
+Info (12128): Elaborating entity "DecodeALU" for hierarchy "DecodeALU:DecoALU" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 220
+Info (12128): Elaborating entity "Latch_ID_RR" for hierarchy "Latch_ID_RR:Latch2" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 252
+Info (12128): Elaborating entity "SignExtendPC" for hierarchy "SignExtendPC:SignExtPC" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 259
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:RegFile" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 275
+Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:SignExt" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 284
+Info (12128): Elaborating entity "Latch_RR_EX" for hierarchy "Latch_RR_EX:Latch3" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 326
+Info (12128): Elaborating entity "Hazard" for hierarchy "Hazard:hazard" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 342
+Info (12128): Elaborating entity "Forwarding" for hierarchy "Forwarding:forward" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 360
+Warning (10240): Verilog HDL Always Construct warning at Forwarding.v(20): inferring latch(es) for variable "mux_rr_src2", which holds its previous value in one or more paths through the always construct File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Forwarding/Forwarding.v Line: 20
+Info (10041): Inferred latch for "mux_rr_src2" at Forwarding.v(55) File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Forwarding/Forwarding.v Line: 55
+Info (12128): Elaborating entity "mux_3_to_1" for hierarchy "mux_3_to_1:mux_rs1" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 368
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:Exe" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 384
+Info (12128): Elaborating entity "FullAdderN" for hierarchy "ALU:Exe|FullAdderN:sumres" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/ALU/ALU.v Line: 170
+Info (12128): Elaborating entity "BJcontrol" for hierarchy "BJcontrol:BJctrl" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 403
+Info (12128): Elaborating entity "Latch_EX_MEM" for hierarchy "Latch_EX_MEM:Latch4" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 432
+Info (12128): Elaborating entity "Memory" for hierarchy "Memory:DataMem" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 444
+Info (12128): Elaborating entity "Latch_MEM_WB" for hierarchy "Latch_MEM_WB:Latch5" File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v Line: 464
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/db/Monociclo.ram0_RegisterFile_a34c3c8.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (276020): Inferred RAM node "RegisterFile:RegFile|mem_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/db/Monociclo.ram0_RegisterFile_a34c3c8.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/db/Monociclo.ram0_RegisterFile_a34c3c8.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (276014): Found 6 instances of uninferred RAM logic
-    Info (276007): RAM logic "Memory:DataMem|mem" is uninferred due to asynchronous read logic File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Memory/Memory.v Line: 15
-    Info (276007): RAM logic "RegisterFile:RegFile|mem" is uninferred due to asynchronous read logic File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/RegisterFile/RegisterFile.v Line: 16
-    Info (276004): RAM logic "BranchPredictor:B_Predictor|pht" is uninferred due to inappropriate RAM size File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/BranchPredictor/BranchPredictor.v Line: 22
-    Info (276007): RAM logic "BranchPredictor:B_Predictor|instr_pc" is uninferred due to asynchronous read logic File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/BranchPredictor/BranchPredictor.v Line: 21
-    Info (276007): RAM logic "IMemory:Instr_Mem|mem" is uninferred due to asynchronous read logic File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/IMemory/IMemory.v Line: 12
-    Info (276007): RAM logic "BranchPredictor:B_Predictor|target_buffer" is uninferred due to asynchronous read logic File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/BranchPredictor/BranchPredictor.v Line: 23
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/db/Monociclo.ram0_IMemory_b32d8800.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/db/Monociclo.ram0_RegisterFile_a34c3c8.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Info (276007): RAM logic "Memory:DataMem|mem" is uninferred due to asynchronous read logic File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Memory/Memory.v Line: 15
+    Info (276007): RAM logic "RegisterFile:RegFile|mem" is uninferred due to asynchronous read logic File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/RegisterFile/RegisterFile.v Line: 16
+    Info (276004): RAM logic "BranchPredictor:B_Predictor|pht" is uninferred due to inappropriate RAM size File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor/BranchPredictor.v Line: 22
+    Info (276007): RAM logic "BranchPredictor:B_Predictor|instr_pc" is uninferred due to asynchronous read logic File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor/BranchPredictor.v Line: 21
+    Info (276007): RAM logic "IMemory:Instr_Mem|mem" is uninferred due to asynchronous read logic File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v Line: 12
+    Info (276007): RAM logic "BranchPredictor:B_Predictor|target_buffer" is uninferred due to asynchronous read logic File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor/BranchPredictor.v Line: 23
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/db/Monociclo.ram0_IMemory_b32d8800.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/db/Monociclo.ram0_RegisterFile_a34c3c8.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "RegisterFile:RegFile|mem_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1193,9 +1193,9 @@ Info (12133): Instantiated megafunction "RegisterFile:RegFile|altsyncram:mem_rtl
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/Monociclo.ram0_RegisterFile_a34c3c8.hdl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mmh1.tdf
-    Info (12023): Found entity 1: altsyncram_mmh1 File: C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/db/altsyncram_mmh1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_mmh1 File: C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/db/altsyncram_mmh1.tdf Line: 28
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/output_files/Monociclo.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/output_files/Monociclo.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 11728 device resources after synthesis - the final resource count might be different
@@ -1204,15 +1204,15 @@ Info (21057): Implemented 11728 device resources after synthesis - the final res
     Info (21061): Implemented 11598 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4910 megabytes
-    Info: Processing ended: Fri Mar 08 03:00:27 2024
+    Info: Peak virtual memory: 4904 megabytes
+    Info: Processing ended: Sun Mar 10 13:49:12 2024
     Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Usuario/Documents/Proyectos_RATT/Microprocesador_monociclo_segmentado/Monociclo/output_files/Monociclo.map.smsg.
+The suppressed messages can be found in C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/output_files/Monociclo.map.smsg.
 
 
