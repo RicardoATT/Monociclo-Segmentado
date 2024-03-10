@@ -16,7 +16,22 @@ A segmented single-cycle processor (or pipelined processor) is a type of central
 
 ## Features
 ### What does the project contain?
-
+- **ALU:** It is the Arithmetic Logic Unit, which is responsible for carrying out all the logical and mathematical operations of the processor.
+- **BJControl:**
+- **BranchPredictor:**
+- **Decode:**
+- **DecodeALU:**
+- **Forwarding:**
+- **FullAdder:**
+- **FullAdderN:**
+- **Hazard:**
+- **IMemory:**
+- **Memory:**
+- **Monociclo:**
+- **mux_3_to_1:**
+- **RegisterFile:**
+- **SignExtend:**
+- **SignExtendPC:**
 
 ### How to install the tools?
 See the [software installation](docs/softwareInstallation.md)
