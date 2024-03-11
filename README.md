@@ -8,7 +8,7 @@ A segmented single-cycle processor (or pipelined processor) is a type of central
 
 This project is part of the courses offered by the [Largarto Initiative](https://lagarto.ipn.mx/) of the National Polytechnic Institute (IPN).
 
-## Tools used
+## Used tools
 - Quartus 20.1.1.
 - rars 1.6.
 
