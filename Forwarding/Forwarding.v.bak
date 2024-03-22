@@ -1,9 +1,0 @@
-module Forwarding (
-	input						rs1_ex,
-	input						rs2_ex,
-	input						rd_mem,
-	input						rd_wb,
-	output	reg	[1:0]	mux_src1,
-	output	reg	[1:0]	mux_src2
-);
-
