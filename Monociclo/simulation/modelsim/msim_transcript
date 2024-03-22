@@ -1,0 +1,295 @@
+# Reading pref.tcl
+# do Monociclo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor/BranchPredictor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:11 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BranchPredictor/BranchPredictor.v 
+# -- Compiling module BranchPredictor
+# 
+# Top level modules:
+# 	BranchPredictor
+# End time: 13:51:11 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/mux_3_to_1 {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/mux_3_to_1/mux_3_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:11 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/mux_3_to_1" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/mux_3_to_1/mux_3_to_1.v 
+# -- Compiling module mux_3_to_1
+# 
+# Top level modules:
+# 	mux_3_to_1
+# End time: 13:51:11 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Forwarding {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Forwarding/Forwarding.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:11 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Forwarding" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Forwarding/Forwarding.v 
+# -- Compiling module Forwarding
+# 
+# Top level modules:
+# 	Forwarding
+# End time: 13:51:11 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Hazard {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Hazard/Hazard.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:11 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Hazard" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Hazard/Hazard.v 
+# -- Compiling module Hazard
+# 
+# Top level modules:
+# 	Hazard
+# End time: 13:51:11 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/SignExtendPC {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtendPC/SignExtendPC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtendPC" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtendPC/SignExtendPC.v 
+# -- Compiling module SignExtendPC
+# 
+# Top level modules:
+# 	SignExtendPC
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/BJcontrol {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BJcontrol/BJcontrol.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BJcontrol" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/BJcontrol/BJcontrol.v 
+# -- Compiling module BJcontrol
+# 
+# Top level modules:
+# 	BJcontrol
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/DecodeALU {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/DecodeALU/DecodeALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/DecodeALU" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/DecodeALU/DecodeALU.v 
+# -- Compiling module DecodeALU
+# 
+# Top level modules:
+# 	DecodeALU
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/FullAdderN {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdderN/FullAdderN.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdderN" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdderN/FullAdderN.v 
+# -- Compiling module FullAdderN
+# 
+# Top level modules:
+# 	FullAdderN
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/FullAdder {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdder/FullAdder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdder" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/FullAdder/FullAdder.v 
+# -- Compiling module FullAdder
+# 
+# Top level modules:
+# 	FullAdder
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/SignExtend {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtend/SignExtend.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtend" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/SignExtend/SignExtend.v 
+# -- Compiling module SignExtend
+# 
+# Top level modules:
+# 	SignExtend
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/RegisterFile {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/RegisterFile/RegisterFile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/RegisterFile" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/RegisterFile/RegisterFile.v 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/ALU {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/ALU/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/ALU" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/ALU/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Decode {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Decode/Decode.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Decode" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Decode/Decode.v 
+# -- Compiling module Decode
+# 
+# Top level modules:
+# 	Decode
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Monociclo {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Monociclo.v 
+# -- Compiling module Monociclo
+# -- Compiling module Monociclo_vlg_tst
+# 
+# Top level modules:
+# 	Monociclo_vlg_tst
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Monociclo {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_IF_ID.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_IF_ID.v 
+# -- Compiling module Latch_IF_ID
+# 
+# Top level modules:
+# 	Latch_IF_ID
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Monociclo {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_EX_MEM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_EX_MEM.v 
+# -- Compiling module Latch_EX_MEM
+# 
+# Top level modules:
+# 	Latch_EX_MEM
+# End time: 13:51:12 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Monociclo {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_MEM_WB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:12 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_MEM_WB.v 
+# -- Compiling module Latch_MEM_WB
+# 
+# Top level modules:
+# 	Latch_MEM_WB
+# End time: 13:51:13 on Mar 10,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Monociclo {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_RR_EX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:13 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_RR_EX.v 
+# -- Compiling module Latch_RR_EX
+# 
+# Top level modules:
+# 	Latch_RR_EX
+# End time: 13:51:13 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Monociclo {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_ID_RR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:13 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/Latch_ID_RR.v 
+# -- Compiling module Latch_ID_RR
+# 
+# Top level modules:
+# 	Latch_ID_RR
+# End time: 13:51:13 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/IMemory {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:13 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/IMemory/IMemory.v 
+# -- Compiling module IMemory
+# 
+# Top level modules:
+# 	IMemory
+# End time: 13:51:13 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Memory {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Memory/Memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:13 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Memory" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Memory/Memory.v 
+# -- Compiling module Memory
+# 
+# Top level modules:
+# 	Memory
+# End time: 13:51:13 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/simulation/modelsim {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/simulation/modelsim/Monociclo.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:51:13 on Mar 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/simulation/modelsim" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/simulation/modelsim/Monociclo.vt 
+# -- Compiling module Monociclo_vlg_tst
+# 
+# Top level modules:
+# 	Monociclo_vlg_tst
+# End time: 13:51:13 on Mar 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Monociclo_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" Monociclo_vlg_tst 
+# Start time: 13:51:13 on Mar 10,2024
+# Loading work.Monociclo_vlg_tst
+# Loading work.Monociclo
+# Loading work.FullAdderN
+# Loading work.IMemory
+# Loading work.BranchPredictor
+# Loading work.Latch_IF_ID
+# Loading work.Decode
+# Loading work.DecodeALU
+# Loading work.Latch_ID_RR
+# Loading work.SignExtendPC
+# Loading work.RegisterFile
+# Loading work.SignExtend
+# Loading work.Latch_RR_EX
+# Loading work.Hazard
+# Loading work.Forwarding
+# Loading work.mux_3_to_1
+# Loading work.ALU
+# Loading work.BJcontrol
+# Loading work.Latch_EX_MEM
+# Loading work.Memory
+# Loading work.Latch_MEM_WB
+# Loading work.FullAdder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns
+# Running testbench
+restart
+do {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Procesador_segmentado/Monociclo/simulation/modelsim/wave.do}
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# End time: 13:54:01 on Mar 10,2024, Elapsed time: 0:02:48
+# Errors: 0, Warnings: 0
